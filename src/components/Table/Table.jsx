@@ -1,4 +1,4 @@
-import style from './Table/table.module.scss'
+import style from '../Table/table.module.scss'
 import words from '../../data/words.json'
 import TableRow from '../TableRow/TableRow'
 

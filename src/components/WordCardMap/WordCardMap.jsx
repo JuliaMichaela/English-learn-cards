@@ -1,4 +1,4 @@
-import style from './WordCardMap.module.scss'
+import WordCard from '../WordCard/WordCard';
 
 const WordCardMap = (props) => {
 
@@ -6,16 +6,15 @@ const WordCardMap = (props) => {
 
 
     return (
-        <div className={style.card - container}>
-            <button className={style.button + style.btnPrev}>prev</button>
+        <div className={style.cardContainer}>
+            <button className={style.button}>prev</button>
             <WordCard
-
                 key={words.id}
                 engVersion={words.english}
                 rusVersion={words.russian}
                 transcription={words.transcription}
             />
-            <button className={style.button + style.btnNext}>next</button>
+            <button className={style.button}>next</button>
 
         </div>
     )

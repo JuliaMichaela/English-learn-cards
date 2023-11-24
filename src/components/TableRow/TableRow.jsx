@@ -1,7 +1,16 @@
-import React from 'react'
 
-export default function TableRow() {
+
+export default function TableRow(props) {
     return (
-        <div>TableRow</div>
+        <tr>
+            <td>{props.engVersion}</td>
+            <td>{props.transcription}</td>
+            <td>{props.rusVersion}</td>
+            <td>
+                <button>Save</button>
+                <button>Edit</button>
+                <button>Delete</button>
+            </td>
+        </tr>
     )
 }
