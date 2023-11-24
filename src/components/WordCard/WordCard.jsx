@@ -1,5 +1,6 @@
 import style from './wordCard.module.scss'
 
+
 export default function WordCard(props) {
     return (
         <div className={style.card + style.animation}>
