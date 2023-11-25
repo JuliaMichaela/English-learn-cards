@@ -6,7 +6,7 @@ const WordCardMap = (props) => {
 
 
     return (
-        <div className={style.cardContainer}>
+        <div className={`${style.card} ${style.container}`}>
             <button className={style.button}>prev</button>
             <WordCard
                 key={words.id}
