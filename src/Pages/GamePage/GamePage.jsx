@@ -1,12 +1,28 @@
 import { useState } from 'react'
-import WordCardMap from '../../Components/WordCardMap/WordCardMap'
+import Slider from '../../Components/Slider/Slider';
+// import WordCardMap from '../../Components/WordCardMap/WordCardMap'
 
 export default function GamePage({ stateWords }) {
     const [countSlider, setCountSlider] = useState(0);
 
+    function prevSlider() {
+        setCountSlider((prevSlider) => prevSlider - 1);
+    }
+
+    function nextSlider() {
+        setCountSlider((prevSlider) => prevSlider + 1);
+    }
+
     return (
-        <WordCardMap
+        <div>
+            <button onClick={prevSlider}>Prev</button>
+            <Slider {...stateWords.words[countSlider]} />
+            {/* <WordCardMap
             words={words}
-            position={0} />
+            position={0} /> */}
+            <button onClick={nextSlider}>Next</button>
+
+        </div>
+
     )
 }
