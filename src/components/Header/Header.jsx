@@ -6,7 +6,7 @@ import logo from '../../assets/images/logo.png'
 export default function Header() {
     return (
         <div className={style.header}>
-            <img src={logo} alt={"logo"} />
+            <img className={style.logo} src={logo} alt={"logo"} />
             <div className={style.headerText}>Learning English Words</div>
             <nav className={style.navigator}>
                 <NavLink to='/'>Home</NavLink>

@@ -9,7 +9,7 @@
 }
 
 .logo {
-    width: 50px;
+    width: 60px;
     color: white;
 }
 
@@ -24,9 +24,10 @@
     background-color: rgb(47, 197, 47);
     color: rgb(255, 253, 253);
     align-items: center;
+    display: flex;
 }
 
-ul {
+a {
         list-style: none;
         display: flex;
         justify-content: space-between;
