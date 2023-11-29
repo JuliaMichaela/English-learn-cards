@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Slider from '../../Components/Slider/Slider';
+import style from '../GamePage/gamePage.module.scss'
 // import WordCardMap from '../../Components/WordCardMap/WordCardMap'
 
 export default function GamePage({ stateWords }) {
@@ -14,7 +15,7 @@ export default function GamePage({ stateWords }) {
     }
 
     return (
-        <div>
+        <div className={style.cardcontainer}>
             <button onClick={prevSlider}>Prev</button>
             <Slider {...stateWords.words[countSlider]} />
             {/* <WordCardMap
