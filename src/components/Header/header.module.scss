@@ -29,12 +29,10 @@
     display: flex;
 }
 
-a {
+a {     padding: 10px;
         list-style: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
 }
-li {
-    margin: 0 auto;
-}
+
