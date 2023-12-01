@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { HomePage, ErrorPage, GamePage, TablePage } from '../Pages'
-import Header from '../components/Header/Header'
+import Header from '../Components/Header/Header'
 import Footer from '../components/Footer/Footer'
 import Spinner from '../Components/Spinner/Spinner'
 import wordsJson from '../data/words.json'
