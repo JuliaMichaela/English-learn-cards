@@ -1,12 +1,10 @@
 .footer {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    bottom: 0;
+    justify-content: center;
     width: 100%;
     background-color: rgb(47, 197, 47);
     height: 50px;
-    justify-content: center;
 }
 
 .footerText {

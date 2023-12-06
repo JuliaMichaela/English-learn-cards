@@ -5,6 +5,27 @@
   text-align: center;
 } 
 
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
+header {
+  flex-basis: 15%;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  flex-basis: 4%;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

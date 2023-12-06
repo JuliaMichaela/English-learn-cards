@@ -18,9 +18,6 @@ export default function GamePage({ stateWords }) {
         <div className={style.cardcontainer}>
             <button onClick={prevSlider}>Prev</button>
             <Slider {...stateWords.words[countSlider]} />
-            {/* <WordCardMap
-            words={words}
-            position={0} /> */}
             <button onClick={nextSlider}>Next</button>
 
         </div>

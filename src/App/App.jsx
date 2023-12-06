@@ -18,20 +18,22 @@ function App() {
   return (
     <>
       <Router>
-        <header>
-          <Header />
-        </header>
-        <main>
-          <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/game' element={<GamePage stateWords={stateWords} />} />
-            <Route path='/table' element={<TablePage stateWords={stateWords} />} />
-            <Route path='*' element={<ErrorPage />} />
-          </Routes>
-        </main>
-        <footer>
-          <Footer />
-        </footer>
+        <div className="container">
+          <header>
+            <Header />
+          </header>
+          <main>
+            <Routes>
+              <Route path='/' element={<HomePage />} />
+              <Route path='/game' element={<GamePage stateWords={stateWords} />} />
+              <Route path='/table' element={<TablePage stateWords={stateWords} />} />
+              <Route path='*' element={<ErrorPage />} />
+            </Routes>
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </div>
       </Router>
     </>
   )
