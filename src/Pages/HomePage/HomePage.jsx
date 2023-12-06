@@ -12,7 +12,7 @@ export default function HomePage() {
                 <div className={style.column}>
                     <h1>Learning English Words</h1>
                     <p>Приложение для изучения иностранного языка и расширения словарного запаса.</p>
-                    <Link to="/table">Старт</Link>
+                    <Link to="/game">Старт</Link>
                 </div>
             </div>
 
