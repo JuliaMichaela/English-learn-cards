@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import style from '../Slider/slider.module.scss';
 
 export default function Slider({ english, transcription, russian, slideIndex }) {
@@ -8,6 +8,10 @@ export default function Slider({ english, transcription, russian, slideIndex }) 
     const handleShow = () => {
         setVisible(!isVisible)
     }
+
+    useEffect(() => {
+        setVisible(false);
+    }, [slideIndex])
 
 
     return (
