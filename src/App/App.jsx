@@ -10,7 +10,7 @@ import '../style/App.css'
 
 function App() {
   const [words, setWords] = useState(() => wordsJson || false);
-  const stateWords = { words, setWords }
+  const stateWords = { words, setWords };
 
   if (!words) {
     return <Spinner />

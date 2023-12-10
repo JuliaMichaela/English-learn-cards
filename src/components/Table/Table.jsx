@@ -4,10 +4,10 @@ import TableRow from '../TableRow/TableRow'
 
 export default function Table({ words, setWords }) {
 
-    function delWord(id) {
-        const filterWords = words.filter((item) => item.id != id);
-        setWords(filterWords);
-    }
+    // function delWord(id) {
+    //     const filterWords = words.filter((item) => item.id != id);
+    //     setWords(filterWords);
+    // }
 
     return (
         <div className={style.table}>
@@ -28,8 +28,9 @@ export default function Table({ words, setWords }) {
                             engVersion={item.english}
                             rusVersion={item.russian}
                             transcription={item.transcription}
-                            id={item.id}
-                            delWord={delWord}>
+                        // id={item.id}
+                        // delWord={delWord}
+                        >
                         </TableRow>
                     ))}
                 </tbody>

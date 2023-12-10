@@ -9,8 +9,10 @@ export default function TableRow(props) {
             <td>
                 <button>Save</button>
                 <button>Edit</button>
-                <button onClick={() => props.delWord(props.id)}>Delete</button>
+                <button >Delete</button>
             </td>
         </tr>
     )
 }
+
+// onClick={() => props.delWord(props.id)}
