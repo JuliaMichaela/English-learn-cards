@@ -8,16 +8,20 @@ export default function TableRow(props) {
     const [inputRus, setInputRus] = useState('');
     const [editWord, setEditWord] = useState(false);
     return (
-        <tr>
-            <td>{props.engVersion}</td>
-            <td>{props.transcription}</td>
-            <td>{props.rusVersion}</td>
-            <td>
-                <button>Save</button>
-                <button>Edit</button>
-                <button onClick={() => props.delWord(props.id)}>Delete</button>
-            </td>
-        </tr>
-    )
+        <>
+            {editWord ? (
+                <tr>
+                    <td>{props.engVersion}</td>
+                    <td>{props.transcription}</td>
+                    <td>{props.rusVersion}</td>
+                    <td>
+                        <button>Save</button>
+                        <button>Edit</button>
+                        <button onClick={() => props.delWord(props.id)}>Delete</button>
+                    </td>
+                </tr>
+            ) : null}
+        </>
+    );
 }
 
