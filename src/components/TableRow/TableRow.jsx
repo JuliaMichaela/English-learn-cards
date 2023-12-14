@@ -15,10 +15,8 @@ export default function TableRow(props) {
     }, [props]);
 
     function editSaveWords() {
-        const obj = {
-            id:
-        }
-        editWord(props.id,)
+        props.editWord(props.id, inputEng, inputTrans, inputRus)
+        setEditWord(false)
     }
 
     return (
@@ -59,7 +57,7 @@ export default function TableRow(props) {
                         </td>
                         <td>
                             <button onClick={editSaveWords}>Save</button>
-                            <button onClick={() => setEditWord(false)}>Edit</button>
+                            <button onClick={() => setEditWord(false)}>Cancel</button>
                             <button onClick={() => props.delWord(props.id)}>Delete</button>
                         </td>
                     </tr>

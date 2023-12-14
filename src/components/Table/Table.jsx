@@ -9,14 +9,17 @@ export default function Table({ words, setWords }) {
         setWords(filterWords);
     }
 
-    function editWord(id, object) {
+    function editWord(id, eng, transc, rus) {
         const arrEditWords = words.map(item => {
             if (item.id === id) {
-                item = object
-                return item
+                item.english = eng
+                item.transcription = transc
+                item.russian = rus
+                return item;
             }
-            return item
-        })
+            return item;
+        });
+        setWords(arrEditWords);
     }
 
     return (
