@@ -9,6 +9,16 @@ export default function Table({ words, setWords }) {
         setWords(filterWords);
     }
 
+    function editWord(id, object) {
+        const arrEditWords = words.map(item => {
+            if (item.id === id) {
+                item = object
+                return item
+            }
+            return item
+        })
+    }
+
     return (
         <div className={style.table}>
             <table>
@@ -30,6 +40,7 @@ export default function Table({ words, setWords }) {
                             transcription={item.transcription}
                             id={item.id}
                             delWord={delWord}
+                            editWord={editWord}
                         >
                         </TableRow>
                     ))}
